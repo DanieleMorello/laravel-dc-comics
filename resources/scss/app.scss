@@ -1,1 +1,145 @@
 @import '~bootstrap/scss/bootstrap';
+$primary: #0382f8;
+$secondary: #808080;
+$dark: #313130;
+$darker: #1c1d1d;
+$light: #fefeff;
+
+header {
+
+    nav {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        li {
+
+            a.nav-link {
+                text-transform: uppercase;
+                color: $darker;
+                .dropdown-toggle::after {
+                    color: $primary !important;
+                }
+            }
+        }
+        .input-group {
+            border: none;
+            text-align: end;
+            border-bottom: 3px solid $primary;
+            width: 15%;
+            align-self: flex-end;
+            input {
+                border: none;
+                padding-right: 0;
+            }
+            [placeholder="Search"] {
+                text-align: right;
+                color: #000;
+            }
+            span {
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+main {
+    #jumbotron {
+        height: 260px;
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+        background-position: top center;
+        }
+
+        #current_series {
+            top: -40px;
+            left: 0;
+        }
+}
+
+h4 {
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a {
+    color: #5d5e64;
+  }
+
+  li {
+    list-style: none;
+
+    button {
+      color: #5d5e64;
+      font-size: .7rem;
+    }
+  }
+
+  .banner {
+    background-color: #0282f9;
+    color: white;
+    padding: 2rem 7rem;
+    span{
+        font-size: .5rem;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+  }
+
+#app_footer {
+    #footer_top {
+        min-height: 370px;
+        background-image: url("../img/footer-bg.jpg");
+
+        #logo_bg_main {
+            background-image: url("../img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none;
+
+            h4 {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: #808080;
+            }
+
+            a:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    #footer_bottom {
+        background-color: #303030;
+        min-height: 110px;
+
+        .col {
+            height: 110px;
+
+            .my_btn {
+                border: 2px solid #0282f9;
+                border-radius: 0;
+                color: white;
+                padding: 0.5rem;
+            }
+
+            p {
+                color: #0282f9;
+            }
+        }
+    }
+}
