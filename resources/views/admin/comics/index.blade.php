@@ -30,7 +30,7 @@
                     @forelse ($comics as $comic)
                         <tr class="table-primary">
                             <td scope="row">{{ $comic->id }}</td>
-                            <td><img height="100" src="{{ $comic->tumb }}" alt="{{ $comic->title }}"></td>
+                            <td><img height="100" src="{{ $comic->thumb }}" alt="{{ $comic->title }}"></td>
                             <td>{{ $comic->title }}</td>
                             <td>{{ $comic->description }}</td>
                             <td>
@@ -62,7 +62,7 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                are you sure?
+                                                Are you sure?
                                             </div>
                                             <div class="modal-footer">
 

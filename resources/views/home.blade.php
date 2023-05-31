@@ -2,4 +2,4 @@
 
 @section('content')
     @include('partials.comics')
-@endsection
+    {{-- @endsection --}}
