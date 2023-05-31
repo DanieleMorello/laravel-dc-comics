@@ -32,20 +32,19 @@
                             <td scope="row">{{ $comic->id }}</td>
                             <td><img height="100" src="{{ $comic->thumb }}" alt="{{ $comic->title }}"></td>
                             <td>{{ $comic->title }}</td>
-                            <td>{{ $comic->description }}</td>
                             <td>
                                 <a href="{{ route('admin.comics.show', $comic->id) }}" title="View"
-                                    class="text-decoration-none">
+                                    class="btn btn-primary text-decoration-none">
                                     <i class="fas fa-eye fa-sm fa-fw"></i>
                                 </a>
                                 <a href="{{ route('admin.comics.edit', $comic->id) }}" title="Edit"
-                                    class="text-decoration-none">
+                                    class="btn btn-primary text-decoration-none">
                                     <i class="fas fa-pencil fa-sm fa-fw"></i>
                                 </a>
                                 <!-- Modal trigger button -->
                                 <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                     data-bs-target="#modal-{{ $comic->id }}">
-                                    Delete
+                                    <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
 
                                 <!-- Modal Body -->
