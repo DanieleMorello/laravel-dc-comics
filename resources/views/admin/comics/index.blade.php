@@ -4,7 +4,7 @@
     <div class="container">
 
         @if (session('message'))
-            <div class="alert alert-primary" role="alert">
+            <div class="alert alert-primary my-3" role="alert">
                 <strong>{{ session('message') }}</strong>
             </div>
         @endif
@@ -42,7 +42,7 @@
                                     <i class="fas fa-pencil fa-sm fa-fw"></i>
                                 </a>
                                 <!-- Modal trigger button -->
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                     data-bs-target="#modal-{{ $comic->id }}">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
