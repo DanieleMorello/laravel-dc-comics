@@ -21,25 +21,4 @@
         </div>
     </div>
 
-    {{-- <div class="container py-5">
-        <h1 class="py-3">{{ $comic->title }}</h1>
-        <div class="d-flex justify-content-end">
-
-            <a name="" id="" class="btn btn-outline-primary ms-auto" href="{{ route('admin.comics.index') }}"
-                role="button">
-                <i class="fas fa-arrow-left fa-xs"></i> Back
-            </a>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-3">
-                <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="img-fluid">
-            </div>
-            <div class="col-6">
-                <div>Title:{{ $comic->title }}</div>
-                <div>Description:{{ $comic->description }}</div>
-            </div>
-        </div>
-    </div> --}}
-
 @endsection

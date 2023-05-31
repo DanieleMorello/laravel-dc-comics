@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h5 class="text-uppercase text-muted my-4">Add A new Comic</h5>
+        <h5 class="text-uppercase text-muted py-4">Add A new Comic</h5>
         <form action="{{ route('admin.comics.store') }}" method="POST">
             @csrf
 
