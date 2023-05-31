@@ -10,17 +10,18 @@ class PageController extends Controller
 {
     public function index()
     {
+        $comics = Comic::all();
         return view('home');
     }
 
-    public function comics()
-    {
-        $comics = Comic::all();
-        return view('comics', compact('comics'));
-    }
+    //     public function comics()
+    //     {
+    //         $comics = Comic::all();
+    //         return view('comics', compact('comics'));
+    //     }
 
-    public function comic(Comic $comic)
-    {
-        return view('comic', compact('comic'));
-    }
+    //     public function comic(Comic $comic)
+    //     {
+    //         return view('comic', compact('comic'));
+    //     }
 }

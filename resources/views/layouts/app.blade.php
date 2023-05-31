@@ -31,10 +31,10 @@
 <body>
     @include('partials.header')
     <main class="bg-light">
-        @include('partials.jumbotron')
+
         @yield('content')
     </main>
-    @include('partials.banner')
+
     @include('partials.footer')
 </body>
 

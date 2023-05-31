@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\Adimin;
+namespace App\Http\Controllers\Admin;
+
 
 use App\Http\Controllers\Controller;
 use App\Models\Comic;
@@ -40,16 +41,15 @@ class ComicController extends Controller
     {
         // dd($request->all());
 
-        $comic = new Comic();
-        // Salvo i campi
-        $comic->title = $request->title;
-        $comic->thumb = $request->thumb;
-        $comic->description = $request->description;
-        $comic->save();
-
+        $data = [
+            'title' => $request->title,
+            'thumb' => $request->thumb,
+            'description' => $request->description,
+        ];
+        Comic::create($data);
 
         // Reinderizzo a get route POST/REDIRECT/GET
-        return to_route('comics.index');
+        return to_route('admin.comics.index')->with('message', 'comic added successfully');
     }
 
     /**
@@ -72,7 +72,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view('admin.comics.show', compact('comic'));
+        return view('admin.comics.edit', compact('comic'));
     }
 
     /**
@@ -84,7 +84,13 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = [
+            'title' => $request->title,
+            'thumb' => $request->thumb,
+            'description' => $request->description,
+        ];
+        $comic->update($data);
+        return to_route('admin.comics.index')->with('message', "Comic: $comic->title update succesfully");
     }
 
     /**
@@ -95,6 +101,7 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return to_route('admin.comics.index')->with('message', "Comic deleted succesfully");
     }
 }
