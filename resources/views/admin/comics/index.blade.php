@@ -38,7 +38,8 @@
                                     class="text-decoration-none">
                                     <i class="fas fa-eye fa-sm fa-fw"></i>
                                 </a>
-                                <a href="" title="Edit" class="text-decoration-none">
+                                <a href="{{ route('admin.comics.edit', $comic->id) }}" title="Edit"
+                                    class="text-decoration-none">
                                     <i class="fas fa-pencil fa-sm fa-fw"></i>
                                 </a>
                                 <!-- Modal trigger button -->
