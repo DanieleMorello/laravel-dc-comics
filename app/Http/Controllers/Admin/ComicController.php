@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreComicRequest;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
@@ -37,16 +38,13 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreComicRequest $request)
     {
         // dd($request->all());
+        $val_data = $request->validate();
+        // dd($val_data);
 
-        $data = [
-            'title' => $request->title,
-            'thumb' => $request->thumb,
-            'description' => $request->description,
-        ];
-        Comic::create($data);
+        Comic::create($val_data);
 
         // Reinderizzo a get route POST/REDIRECT/GET
         return to_route('admin.comics.index')->with('message', 'comic added successfully');
@@ -82,7 +80,7 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(StoreComicRequest $request, Comic $comic)
     {
         $data = [
             'title' => $request->title,

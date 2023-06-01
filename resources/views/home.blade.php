@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
-@section('content')
-    @include('partials.header')
-    @include('partials.comics')
-    @include('partials.footer')
-    {{-- @endsection --}}
+
+@include('partials.header')
+@include('partials.jumbotron')
+
+@include('partials.comics')
+
+
+
+@include('partials.banner')
+
+@include('partials.footer')
