@@ -2,12 +2,13 @@
 
 
 @include('partials.header')
-@include('partials.jumbotron')
-
-@include('partials.comics')
 
 
 
-@include('partials.banner')
 
-@include('partials.footer')
+@section('content')
+    @include('partials.jumbotron')
+    @include('partials.comics')
+    @include('partials.banner')
+    @include('partials.footer')
+@endsection
