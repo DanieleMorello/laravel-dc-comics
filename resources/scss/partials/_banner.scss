@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+
+.banner {
+    background-color: $primary;
+    color: $light;
+    padding: 2rem 6rem;
+    span{
+        font-size: .5rem;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $light;
+    }
+
+  }

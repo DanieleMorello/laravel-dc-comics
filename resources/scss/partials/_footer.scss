@@ -1,0 +1,49 @@
+#app_footer {
+    #footer_top {
+        min-height: 370px;
+        background-image: url("../img/footer-bg.jpg");
+
+        #logo_bg_main {
+            background-image: url("../img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none;
+
+            h4 {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: $secondary;
+            }
+
+            a:hover {
+                color: $light;
+            }
+        }
+    }
+
+    #footer_bottom {
+        background-color: $dark;
+        min-height: 110px;
+
+        .col {
+            height: 110px;
+
+            .my_btn {
+                border: 2px solid $primary;
+                border-radius: 0;
+                color: $light;
+                padding: 0.5rem;
+            }
+
+            p {
+                color: $primary;
+            }
+        }
+    }
+}
