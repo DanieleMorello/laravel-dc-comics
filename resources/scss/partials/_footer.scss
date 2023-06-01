@@ -1,29 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+
 #app_footer {
     #footer_top {
-        min-height: 370px;
-        background-image: url("../img/footer-bg.jpg");
+        background-image: url("../img/footer-bg.jpg"),
+            url("../img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position: right 10% bottom 45%;
+        background-blend-mode: overlay;
+    }
 
-        #logo_bg_main {
-            background-image: url("../img/dc-logo-bg.png");
-            background-repeat: no-repeat;
-            background-position: center;
+    ul {
+        list-style: none;
+
+        h6 {
+            font-weight: bold;
         }
 
-        ul {
-            list-style: none;
+        p {
+            font-size: 0.5rem;
+        }
 
-            h4 {
-                font-weight: bold;
-            }
+        a {
+            font-size: 0.7rem;
+            text-decoration: none;
+            color: $secondary;
+        }
 
-            a {
-                text-decoration: none;
-                color: $secondary;
-            }
-
-            a:hover {
-                color: $light;
-            }
+        a:hover {
+            color: $light;
         }
     }
 

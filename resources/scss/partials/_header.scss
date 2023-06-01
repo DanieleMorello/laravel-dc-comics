@@ -1,35 +1,38 @@
 @import "~bootstrap/scss/bootstrap";
 
 header {
-
     nav {
         font-family: "Roboto Condensed", sans-serif;
         font-weight: 700;
         font-size: 0.8rem;
         li {
-
             a.nav-link {
                 text-transform: uppercase;
                 color: $darker;
+
                 .dropdown-toggle::after {
                     color: $primary !important;
                 }
             }
         }
+
         .input-group {
             border: none;
             text-align: end;
             border-bottom: 3px solid $primary;
             width: 15%;
             align-self: flex-end;
+
             input {
                 border: none;
                 padding-right: 0;
             }
+
             [placeholder="Search"] {
                 text-align: right;
                 color: $darker;
             }
+
             span {
                 border: none;
                 background-color: transparent;
