@@ -42,7 +42,7 @@ class ComicController extends Controller
     public function store(StoreComicRequest $request)
     {
         // dd($request->all());
-        $val_data = $request->validate();
+        $val_data = $request->validated();
         // dd($val_data);
 
         Comic::create($val_data);
