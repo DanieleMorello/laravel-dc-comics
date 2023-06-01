@@ -83,12 +83,8 @@ class ComicController extends Controller
      */
     public function update(UpdateComicRequest $request, Comic $comic)
     {
-        $data = [
-            'title' => $request->title,
-            'thumb' => $request->thumb,
-            'description' => $request->description,
-        ];
-        $comic->update($data);
+        $val_data = $request->validated();
+        $comic->update($val_data);
         return to_route('admin.comics.index')->with('message', "Comic: $comic->title update succesfully");
     }
 
