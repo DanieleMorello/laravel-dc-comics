@@ -1,43 +1,43 @@
-@import '~bootstrap/scss/bootstrap';
-@import 'partials/variables';
+@import "~bootstrap/scss/bootstrap";
+@import "partials/variables";
 
-@import 'partials/header';
+@import "partials/header";
 
 main {
     #jumbotron {
         height: 260px;
-        background-image: url('../img/jumbotron.jpg');
+        background-image: url("../img/jumbotron.jpg");
         background-size: cover;
         background-position: top center;
-        }
+    }
 
-        #current_series {
-            top: -40px;
-            left: 0;
-        }
+    #current_series {
+        top: -40px;
+        left: 0;
+    }
 }
 
 h4 {
-    color: #ffffff;
-  }
+    color: $light;
+}
 
-  a {
+a {
     text-decoration: none;
-  }
+}
 
-  a {
-    color: #5d5e64;
-  }
+a {
+    color: $secondary;
+}
 
-  li {
+li {
     list-style: none;
 
     button {
-      color: #5d5e64;
-      font-size: .7rem;
+        color: $secondary;
+        font-size: 0.7rem;
     }
-  }
+}
 
-@import 'partials/banner';
+@import "partials/banner";
 
-@import'partials/footer';
+@import "partials/footer";
