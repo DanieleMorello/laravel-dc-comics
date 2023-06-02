@@ -10,7 +10,7 @@
                     <div class="card rounded-0 border-0 bg-transparent pb-5">
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         <div class="card_text">
-                            <span class="text-uppercase text-white">{{ $comic['series'] }}</span>
+                            <span class="text-uppercase text-white">{{ $comic['title'] }}</span>
                         </div>
                     </div>
                 </div>
