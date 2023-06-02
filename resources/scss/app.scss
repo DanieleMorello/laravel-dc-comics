@@ -6,9 +6,7 @@
 main {
     #jumbotron {
         height: 260px;
-        background-image: url("../img/jumbotron.jpg");
-        background-size: cover;
-        background-position: top center;
+        background: url("../img/jumbotron.jpg") top center/cover;
     }
 
     #current_series {
@@ -27,19 +25,11 @@ h4 {
 
 a {
     text-decoration: none;
-}
-
-a {
     color: $secondary;
 }
 
 li {
     list-style: none;
-
-    button {
-        color: $secondary;
-        font-size: 0.7rem;
-    }
 }
 
 @import "partials/banner";
