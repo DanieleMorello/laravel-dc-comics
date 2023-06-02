@@ -34,15 +34,15 @@
                             <td>{{ $comic->title }}</td>
                             <td>
                                 <a href="{{ route('admin.comics.show', $comic->id) }}" title="View"
-                                    class="btn btn-primary text-decoration-none">
+                                    class="btn btn-info text-decoration-none">
                                     <i class="fas fa-eye fa-sm fa-fw"></i>
                                 </a>
                                 <a href="{{ route('admin.comics.edit', $comic->id) }}" title="Edit"
-                                    class="btn btn-primary text-decoration-none">
+                                    class="btn btn-secondary text-decoration-none">
                                     <i class="fas fa-pencil fa-sm fa-fw"></i>
                                 </a>
                                 <!-- Modal trigger button -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                     data-bs-target="#modal-{{ $comic->id }}">
                                     <i class="fas fa-trash fa-sm fa-fw"></i>
                                 </button>
