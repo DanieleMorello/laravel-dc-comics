@@ -33,9 +33,9 @@
             </div>
 
             <div class="mb-3">
-                <label for="description" class="form-label @error('description') is-invalid @enderror">Description:</label>
-                <textarea class="form-control" name="description" id="description" rows="3"
-                    placeholder="Write new description comics here">{{ old('description') }}</textarea>
+                <label for="description" class="form-label">Description:</label>
+                <textarea class="form-control  @error('description') is-invalid @enderror" name="description" id="description"
+                    rows="3" placeholder="Write new description comics here">{{ old('description') }}</textarea>
                 @error('description')
                     <div class="alert alert-danger" role="alert">
                         <strong>Description, Error: </strong>{{ $message }}
